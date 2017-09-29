@@ -38,7 +38,7 @@
         yy: 'YY',
         yyy: 'YYYY',
         yyyy: 'YYYY',
-        a: 'a',
+        a: 'A',
         A: 'A',
         M: 'M',
         MM: 'MM',
@@ -131,7 +131,7 @@
 
           while ((part = regexp.exec(formatString))) {
               part = part[0];
-              if (part.match(/'.?'/)) {
+              if (part.match(/'.+?'/)) {
                   mapped += "[" + part.substring(1, part.length - 1) + "]";
               }
               else {
